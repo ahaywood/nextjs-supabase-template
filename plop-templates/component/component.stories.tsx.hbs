@@ -1,0 +1,17 @@
+import type { {{ pascalCase name }}Props } from './{{ pascalCase name }}';
+import { {{ pascalCase name }} } from './{{ pascalCase name }}';
+
+export default {
+  title: '{{ pascalCase name }}',
+  component: {{ name }},
+};
+
+const Template = (args: {{ pascalCase name}}Props) =>
+<{{ pascalCase name }} {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  /* component args */
+  // primary: true,
+  // label: 'Button',
+};
